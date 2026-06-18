@@ -3,8 +3,11 @@
 // JS minimo: menu movil, animacion al hacer scroll y año del footer.
 // ============================================================
 
-// Año automático en el footer
-document.getElementById('year').textContent = new Date().getFullYear();
+// Año automático en el footer (si existe)
+const yearEl = document.getElementById('year');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
 
 // Menú móvil (hamburguesa)
 const navToggle = document.getElementById('navToggle');
