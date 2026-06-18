@@ -4,11 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xabier Quintairos Argüello — Desarrollador Unity &amp; VR</title>
-  <meta name="description" content="Portfolio de Xabier Quintairos Argüello, desarrollador multiplataforma especializado en Unity, C# y realidad virtual.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Ajuste específico para tu foto */
+    .crt__screen img {
+      width: 50%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
@@ -55,13 +61,8 @@
       <div class="hero__frame reveal">
         <div class="crt">
           <div class="crt__screen">
-            <img src="foto.png" alt="Foto de Xabier Quintairos Argüello" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <img src="foto.png" alt="Foto de Xabier" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="crt__fallback">XQ</div>
-            <div class="crt__overlay" aria-hidden="true"></div>
-          </div>
-          <div class="crt__bar">
-            <span class="crt__led"></span>
-            <span>ON AIR</span>
           </div>
         </div>
       </div>
@@ -70,44 +71,24 @@
 
   <section class="section" id="sobre-mi">
     <div class="section__inner">
-      <p class="eyebrow reveal">// sobre mí</p>
-      <h2 class="section__title reveal">Perfil</h2>
-      <div class="about reveal">
-        <p>Soy desarrollador multiplataforma especializado en Unity y experiencias inmersivas, con prácticas en desarrollo VR, software multiplataforma y soporte técnico. Actualmente desarrollo en solitario un juego de terror narrativo en Unity.</p>
-      </div>
+      <h2 class="section__title">Sobre mí</h2>
+      <p>Soy desarrollador multiplataforma especializado en Unity y experiencias inmersivas...</p>
     </div>
   </section>
 
   <section class="section section--alt" id="stack">
     <div class="section__inner">
-      <p class="eyebrow reveal">// stack</p>
-      <h2 class="section__title reveal">Habilidades</h2>
-      <div class="skills reveal">
-        <div class="skills__group">
-          <h3>Juegos &amp; VR</h3>
-          <ul class="tags">
-            <li>Unity (C#)</li>
-            <li>Realidad Virtual</li>
-          </ul>
-        </div>
-      </div>
+      <h2 class="section__title">Stack</h2>
     </div>
   </section>
 
   <section class="section" id="proyecto">
     <div class="section__inner">
-      <p class="eyebrow reveal">// proyecto destacado</p>
-      <h2 class="section__title reveal">Xabier project</h2>
-      <div class="project reveal">
-        <div class="project__video">
-          <div class="crt crt--wide">
-            <div class="crt__screen crt__screen--video" id="videoScreen">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xdp3QuOyjTU" title="Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="crt__bar crt__bar--rec">
-              <span class="crt__led crt__led--red"></span>
-              <span>REC</span>
-            </div>
+      <h2 class="section__title">Proyecto Destacado</h2>
+      <div class="project__video">
+        <div class="crt crt--wide">
+          <div class="crt__screen crt__screen--video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xdp3QuOyjTU" title="Gameplay" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -116,28 +97,24 @@
 
   <section class="section section--alt" id="experiencia">
     <div class="section__inner">
-      <p class="eyebrow reveal">// experiencia</p>
-      <h2 class="section__title reveal">Experiencia</h2>
+      <h2 class="section__title">Experiencia</h2>
     </div>
   </section>
 
   <section class="section" id="educacion">
     <div class="section__inner">
-      <p class="eyebrow reveal">// educación</p>
-      <h2 class="section__title reveal">Educación</h2>
+      <h2 class="section__title">Educación</h2>
     </div>
   </section>
 
-  <section class="section section--alt contact" id="contacto">
+  <section class="section section--alt" id="contacto">
     <div class="section__inner">
-      <p class="eyebrow reveal">// contacto</p>
-      <h2 class="section__title reveal">Hablemos</h2>
-      <a href="CV_Xabier_Quintairos.pdf" target="_blank" rel="noopener" class="btn btn--solid reveal">Descargar CV</a>
+      <h2 class="section__title">Contacto</h2>
     </div>
   </section>
 
   <footer class="footer">
-    <p>Xabier Quintairos Argüello — hecho a mano con HTML, CSS y JS · <span id="year"></span></p>
+    <p>© 2026 Xabier Quintairos Argüello</p>
   </footer>
 
   <script src="script.js"></script>
