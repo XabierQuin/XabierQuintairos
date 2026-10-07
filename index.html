@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="htmlRoot">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xabier Quintairos Argüello — Desarrollador Unity &amp; VR</title>
+  <title id="pageTitle">Xabier Quintairos Argüello — Desarrollador Unity &amp; VR</title>
   <meta name="description" content="Portfolio de Xabier Quintairos Argüello, desarrollador multiplataforma especializado en Unity, C# y realidad virtual.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,15 +22,19 @@
       <a class="nav__brand" href="#inicio">XQ<span class="nav__cursor">_</span></a>
 
       <nav class="nav__links" id="navLinks">
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#stack">Stack</a>
-        <a href="#proyecto">Proyecto</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#educacion">Educación</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#sobre-mi" data-i18n="nav-about">Sobre mí</a>
+        <a href="#stack" data-i18n="nav-stack">Stack</a>
+        <a href="#proyecto" data-i18n="nav-project">Proyecto</a>
+        <a href="#experiencia" data-i18n="nav-experience">Experiencia</a>
+        <a href="#educacion" data-i18n="nav-education">Educación</a>
+        <a href="#contacto" data-i18n="nav-contact">Contacto</a>
       </nav>
 
-      <a class="btn btn--ghost nav__cv" href="CV_Xabier_Quintairos.pdf" target="_blank" rel="noopener">Descargar CV</a>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <!-- Botón de cambio de idioma -->
+        <button id="langToggle" class="tagbtn" style="cursor: pointer; background: var(--surface); color: var(--text);">EN</button>
+        <a class="btn btn--ghost nav__cv" href="CV_Xabier_Quintairos.pdf" target="_blank" rel="noopener" data-i18n="cv-btn">Descargar CV</a>
+      </div>
 
       <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
@@ -46,18 +50,18 @@
 
     <div class="hero__inner">
       <div class="hero__text reveal">
-        <p class="eyebrow">// desarrollador multiplataforma</p>
+        <p class="eyebrow" data-i18n="hero-eyebrow">// desarrollador multiplataforma</p>
         <h1 class="hero__title">Xabier Quintairos<br>Argüello</h1>
-        <p class="hero__subtitle">Unity · C# · Realidad Virtual. Construyo experiencias interactivas que van desde apps multiplataforma hasta videojuegos de terror narrativo, de principio a fin.</p>
+        <p class="hero__subtitle" data-i18n="hero-sub">Unity · C# · Realidad Virtual. Construyo experiencias interactivas que van desde apps multiplataforma hasta videojuegos de terror narrativo, de principio a fin.</p>
 
         <div class="hero__badges">
-          <span class="badge badge--status"><span class="dot"></span>Disponible para trabajar</span>
+          <span class="badge badge--status"><span class="dot"></span><span data-i18n="badge-avail">Disponible para trabajar</span></span>
           <span class="badge">Ermua, Bizkaia</span>
         </div>
 
         <div class="hero__actions">
-          <a href="#proyecto" class="btn btn--solid">Ver proyecto destacado</a>
-          <a href="CV_Xabier_Quintairos.pdf" target="_blank" rel="noopener" class="btn btn--ghost">Descargar CV</a>
+          <a href="#proyecto" class="btn btn--solid" data-i18n="btn-proj">Ver proyecto destacado</a>
+          <a href="CV_Xabier_Quintairos.pdf" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="cv-btn">Descargar CV</a>
         </div>
 
         <div class="hero__social">
@@ -70,15 +74,13 @@
 
       <div class="hero__frame reveal">
         <div class="crt">
-          <div class="crt__screen" style="text-align: center;">
-            <img src="foto.png" alt="Xabier Quintairos Argüello" style="width: 150px; height: auto; display: inline-block; margin: 0 auto;"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="crt__fallback">XQ</div>
+          <div class="crt__screen" style="display: flex; align-items: center; justify-content: center;">
+            <div class="crt__fallback" style="display: block; font-size: 5rem; text-align: center;">XQ_</div>
             <div class="crt__overlay" aria-hidden="true"></div>
           </div>
           <div class="crt__bar">
             <span class="crt__led"></span>
-            <span></span>
+            <span>STANDBY</span>
           </div>
         </div>
       </div>
@@ -90,12 +92,12 @@
   ============================================================= -->
   <section class="section" id="sobre-mi">
     <div class="section__inner">
-      <p class="eyebrow reveal">// sobre mí</p>
-      <h2 class="section__title reveal">Perfil</h2>
+      <p class="eyebrow reveal" data-i18n="about-eyebrow">// sobre mí</p>
+      <h2 class="section__title reveal" data-i18n="about-title">Perfil</h2>
 
       <div class="about reveal">
-        <p>Soy desarrollador multiplataforma especializado en Unity y experiencias inmersivas, con prácticas en desarrollo VR para bienestar y estimulación cognitiva, software multiplataforma y soporte técnico. Actualmente curso una especialización en videojuegos y realidad virtual, y desarrollo en solitario un juego de terror narrativo en Unity: diseño, programo y cuido cada sistema, del control del jugador a los efectos visuales retro.</p>
-        <p>Me interesan la optimización de rendimiento, la interacción inmersiva y construir software que se sienta cuidado de principio a fin — ya sea una app, una experiencia VR o un videojuego.</p>
+        <p data-i18n="about-p1">Soy desarrollador multiplataforma especializado en Unity y experiencias inmersivas, con prácticas en desarrollo VR para bienestar y estimulación cognitiva, software multiplataforma y soporte técnico. Actualmente curso una especialización en videojuegos y realidad virtual, y desarrollo en solitario un juego de terror narrativo en Unity: diseño, programo y cuido cada sistema, del control del jugador a los efectos visuales retro.</p>
+        <p data-i18n="about-p2">Me interesan la optimización de rendimiento, la interacción inmersiva y construir software que se sienta cuidado de principio a fin — ya sea una app, una experiencia VR o un videojuego.</p>
       </div>
     </div>
   </section>
@@ -105,17 +107,17 @@
   ============================================================= -->
   <section class="section section--alt" id="stack">
     <div class="section__inner">
-      <p class="eyebrow reveal">// stack</p>
-      <h2 class="section__title reveal">Habilidades</h2>
+      <p class="eyebrow reveal" data-i18n="stack-eyebrow">// stack</p>
+      <h2 class="section__title reveal" data-i18n="stack-title">Habilidades</h2>
 
       <div class="skills reveal">
         <div class="skills__group">
-          <h3>Juegos &amp; VR</h3>
+          <h3 data-i18n="skills-h1">Juegos &amp; VR</h3>
           <ul class="tags">
             <li>Unity (C#)</li>
-            <li>Realidad Virtual</li>
+            <li data-i18n="tag-vr">Realidad Virtual</li>
             <li>Meta Quest / Pico</li>
-            <li>Unreal Engine (básico)</li>
+            <li data-i18n="tag-ue">Unreal Engine (básico)</li>
           </ul>
         </div>
         <div class="skills__group">
@@ -127,11 +129,11 @@
           </ul>
         </div>
         <div class="skills__group">
-          <h3>Herramientas &amp; Datos</h3>
+          <h3 data-i18n="skills-h3">Herramientas &amp; Datos</h3>
           <ul class="tags">
             <li>Git / GitHub</li>
             <li>SQL</li>
-            <li>QA &amp; Testing</li>
+            <li data-i18n="tag-qa">QA &amp; Testing</li>
           </ul>
         </div>
       </div>
@@ -143,9 +145,9 @@
   ============================================================= -->
   <section class="section" id="proyecto">
     <div class="section__inner">
-      <p class="eyebrow reveal">// proyecto destacado</p>
+      <p class="eyebrow reveal" data-i18n="proj-eyebrow">// proyecto destacado</p>
       <h2 class="section__title reveal">Inheritance Little Doll demo</h2>
-      <p class="project__meta reveal">Terror narrativo en primera persona · Unity · Proyecto en solitario</p>
+      <p class="project__meta reveal" data-i18n="proj-meta">Terror narrativo en primera persona · Unity · Proyecto en solitario</p>
 
       <div class="project reveal">
         <div class="project__video">
@@ -166,16 +168,16 @@
         </div>
 
         <div class="project__content">
-          <p>Un juego de terror narrativo ambientado en una casa familiar, donde un protagonista infantil vive tres días que se torcerán poco a poco. Inspirado en juegos como Fears to Fathom, apuesta por el terror cotidiano antes que el susto fácil: la tensión crece desde los pequeños detalles de una casa que deja de sentirse segura.</p>
+          <p data-i18n="proj-desc">Un juego de terror narrativo ambientado en una casa familiar, donde un protagonista infantil vive tres días que se torcerán poco a poco. Inspirado en juegos como Fears to Fathom, apuesta por el terror cotidiano antes que el susto fácil: la tensión crece desde los pequeños detalles de una casa que deja de sentirse segura.</p>
 
-          <h3 class="project__subhead">Construido yo solo, de principio a fin:</h3>
+          <h3 class="project__subhead" data-i18n="proj-subhead">Construido yo solo, de principio a fin:</h3>
           <ul class="project__list">
-            <li>Controlador en primera persona y sistema de movimiento del personaje.</li>
-            <li>Sistema de interacción con el entorno: puertas, objetos y mecanismos.</li>
-            <li>Interfaz de teléfono / mensajes SMS integrada en el juego.</li>
-            <li>Efecto de cámara retro estilo PS1, fiel a la estética de terror analógico.</li>
-            <li>Sistema de gestión de días para estructurar la narrativa en tres jornadas.</li>
-            <li>NPCs mediante billboards optimizados y cinemáticas de introducción.</li>
+            <li data-i18n="proj-li1">Controlador en primera persona y sistema de movimiento del personaje.</li>
+            <li data-i18n="proj-li2">Sistema de interacción con el entorno: puertas, objetos y mecanismos.</li>
+            <li data-i18n="proj-li3">Interfaz de teléfono / mensajes SMS integrada en el juego.</li>
+            <li data-i18n="proj-li4">Efecto de cámara retro estilo PS1, fiel a la estética de terror analógico.</li>
+            <li data-i18n="proj-li5">Sistema de gestión de días para estructurar la narrativa en tres jornadas.</li>
+            <li data-i18n="proj-li6">NPCs mediante billboards optimizados y cinemáticas de introducción.</li>
           </ul>
 
           <div class="tech-badges">
@@ -184,8 +186,9 @@
             <span>Git</span>
           </div>
 
+          <!-- BOTÓN DE ITCH.IO GIGANTE Y LLAMATIVO -->
           <div class="project__actions">
-            <a href="https://xabierquin.itch.io/inheritance" target="_blank" rel="noopener" class="btn btn--ghost">Jugarlo (itch.io)</a>
+            <a href="https://xabierquin.itch.io/inheritance" target="_blank" rel="noopener" class="btn btn--solid btn--massive" data-i18n="btn-play">🎮 Jugarlo ahora en itch.io</a>
           </div>
         </div>
       </div>
@@ -197,42 +200,42 @@
   ============================================================= -->
   <section class="section section--alt" id="experiencia">
     <div class="section__inner">
-      <p class="eyebrow reveal">// experiencia</p>
-      <h2 class="section__title reveal">Experiencia</h2>
+      <p class="eyebrow reveal" data-i18n="exp-eyebrow">// experiencia</p>
+      <h2 class="section__title reveal" data-i18n="exp-title">Experiencia</h2>
 
       <ol class="timeline reveal">
         <li>
           <div class="timeline__year">2026</div>
           <div class="timeline__content">
-            <h3>Desarrollador VR / Unity <span>(Prácticas)</span></h3>
+            <h3 data-i18n="exp1-role">Desarrollador VR / Unity <span>(Prácticas)</span></h3>
             <p class="timeline__org">OROI · Donostia</p>
             <ul>
-              <li>Desarrollo de experiencias VR en Unity para bienestar y estimulación cognitiva.</li>
-              <li>Optimización de rendimiento para Meta Quest y Pico.</li>
-              <li>Testing de aplicaciones y mejora de interfaces para usuarios.</li>
+              <li data-i18n="exp1-desc1">Desarrollo de experiencias VR en Unity para bienestar y estimulación cognitiva.</li>
+              <li data-i18n="exp1-desc2">Optimización de rendimiento para Meta Quest y Pico.</li>
+              <li data-i18n="exp1-desc3">Testing de aplicaciones y mejora de interfaces para usuarios.</li>
             </ul>
           </div>
         </li>
         <li>
           <div class="timeline__year">2025</div>
           <div class="timeline__content">
-            <h3>Desarrollador de Software <span>(Prácticas)</span></h3>
+            <h3 data-i18n="exp2-role">Desarrollador de Software <span>(Prácticas)</span></h3>
             <p class="timeline__org">ALZURAN · Zaldibar</p>
             <ul>
-              <li>Desarrollo y mantenimiento de aplicaciones multiplataforma.</li>
-              <li>Gestión de bases de datos SQL y consultas.</li>
-              <li>Uso de Git para control de versiones y trabajo colaborativo.</li>
+              <li data-i18n="exp2-desc1">Desarrollo y mantenimiento de aplicaciones multiplataforma.</li>
+              <li data-i18n="exp2-desc2">Gestión de bases de datos SQL y consultas.</li>
+              <li data-i18n="exp2-desc3">Uso de Git para control de versiones y trabajo colaborativo.</li>
             </ul>
           </div>
         </li>
         <li>
           <div class="timeline__year">2024</div>
           <div class="timeline__content">
-            <h3>Técnico Informático <span>(Prácticas)</span></h3>
+            <h3 data-i18n="exp3-role">Técnico Informático <span>(Prácticas)</span></h3>
             <p class="timeline__org">MEK GROUP · Mallabia</p>
             <ul>
-              <li>Soporte técnico y mantenimiento de sistemas informáticos.</li>
-              <li>Configuración básica de redes y soporte Windows/Linux.</li>
+              <li data-i18n="exp3-desc1">Soporte técnico y mantenimiento de sistemas informáticos.</li>
+              <li data-i18n="exp3-desc2">Configuración básica de redes y soporte Windows/Linux.</li>
             </ul>
           </div>
         </li>
@@ -245,28 +248,28 @@
   ============================================================= -->
   <section class="section" id="educacion">
     <div class="section__inner">
-      <p class="eyebrow reveal">// educación</p>
-      <h2 class="section__title reveal">Educación</h2>
+      <p class="eyebrow reveal" data-i18n="edu-eyebrow">// educación</p>
+      <h2 class="section__title reveal" data-i18n="edu-title">Educación</h2>
 
       <ol class="timeline timeline--compact reveal">
         <li>
           <div class="timeline__year">2025–2026</div>
           <div class="timeline__content">
-            <h3>Curso de Especialización en Videojuegos y VR</h3>
+            <h3 data-i18n="edu1-title">Curso de Especialización en Videojuegos y VR</h3>
             <p class="timeline__org">Uni Eibar-Ermua</p>
           </div>
         </li>
         <li>
           <div class="timeline__year">2023–2025</div>
           <div class="timeline__content">
-            <h3>Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+            <h3 data-i18n="edu2-title">Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
             <p class="timeline__org">Uni Eibar-Ermua · Eibar</p>
           </div>
         </li>
         <li>
           <div class="timeline__year">2020–2023</div>
           <div class="timeline__content">
-            <h3>Grado Medio en Sistemas Microinformáticos y Redes (SMR)</h3>
+            <h3 data-i18n="edu3-title">Grado Medio en Sistemas Microinformáticos y Redes (SMR)</h3>
             <p class="timeline__org">Uni Eibar-Ermua · Eibar</p>
           </div>
         </li>
@@ -279,9 +282,9 @@
   ============================================================= -->
   <section class="section section--alt contact" id="contacto">
     <div class="section__inner">
-      <p class="eyebrow eyebrow--contact">// contacto</p>
-      <h2 class="section__title reveal">Hablemos</h2>
-      <p class="contact__intro reveal">Estoy buscando mi primera posición como programador. Si tienes un proyecto, una vacante, o simplemente quieres hablar de Unity y VR, aquí me encuentras:</p>
+      <p class="eyebrow reveal" data-i18n="contact-eyebrow">// contacto</p>
+      <h2 class="section__title reveal" data-i18n="contact-title">Hablemos</h2>
+      <p class="contact__intro reveal" data-i18n="contact-intro">Estoy buscando mi primera posición como programador. Si tienes un proyecto, una vacante, o simplemente quieres hablar de Unity y VR, aquí me encuentras:</p>
 
       <div class="contact__prompt reveal">
         <a href="mailto:seratorop@gmail.com">&gt; seratorop@gmail.com</a>
@@ -297,7 +300,7 @@
         <a href="#">[in] LinkedIn</a>
       </div>
 
-      <a href="CV_Xabier_Quintairos.pdf" target="_blank" rel="noopener" class="btn btn--solid reveal">Descargar CV</a>
+      <a href="CV_Xabier_Quintairos.pdf" target="_blank" rel="noopener" class="btn btn--solid reveal" data-i18n="cv-btn">Descargar CV</a>
     </div>
   </section>
 
